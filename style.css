@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+header h1 {
+    background-color: #ffee00;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #ffee00;
+    padding: 0.1rem;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 1rem;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+nav a:hover {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#txt-search{
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 1rem;
+    width: 15rem;
+}
+
+#tab-not-yet {
+    display: block;
+}
+
+#tab-done {
+    display: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.jw-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background-color: #00000080;
+    overflow: auto;
+}
+
+.jw-modal.open {
+    display: block;
+}
+
+.jw-modal-body {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #c0c0c0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+    padding: 2rem;
+    width: max-content;
+    height: max-content;
+    background: #ffffff;
+}
+
+.jw-modal-body h2 {
+    text-align: center;
+}
+
+body.jw-modal-open {
+    overflow: hidden;
+}
+
+form > input{
+    margin-bottom: 1rem;
+}
+
+form > input:not([type="checkbox"]) {
+    border-radius: 8px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 15rem;
+}
+
+input:focus {
+    background-color: #00ffff;
+}
+
+.book-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.book-item {
+    border-radius: 10px;
+    border-style: solid;
+    text-align: center;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    width: 16rem;
+}
+
+.book-item:hover {
+    background-color: #ffee00;
+}
+
+.btn-group{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.btn-group button {
+    border-radius: 5px;
+    border-style: solid;
+}
+
+#btn-close:hover, #btn-close:focus,
+.btn-delete:hover, .btn-delete:focus {
+    background-color: #ff0000;
+}
+
+#btn-add {
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+}
+
+#btn-submit:hover, #btn-submit:focus,
+.btn-done:hover, .btn-done:focus,
+.btn-undo:hover, .btn-undo:focus,
+#btn-add:hover, #btn-add:focus {
+    background-color: #abff2e;
+}

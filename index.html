@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bookshelf</h1>
+        <nav>
+            <ul>
+                <li><a href="#tab-not-yet" id="nav-not-yet">Belum selesai dibaca</a></li>
+                <li><a href="#tab-done" id="nav-done">Selesai dibaca</a></li>
+                <input type="search" name="title" id="txt-search" placeholder="Cari judul buku">
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="contents">
+            <div id="modal" class="jw-modal">
+                <div class="jw-modal-body">
+                    <h2>Tambah Buku Baru</h2>
+                    <form name="book-form">
+                        <label for="title">Judul</label><br>
+                        <input type="text" name="title" required><br>
+                        <label for="author">Penulis</label><br>
+                        <input type="text" name="author" required><br>
+                        <label for="year">Tahun terbit</label><br>
+                        <input type="number" name="year" min="1900" max="2100" required><br>
+                        <input type="checkbox" name="isComplete">
+                        <label for="isComplete">Sudah dibaca</label><br>
+                        <div class="btn-group">
+                            <button type="submit" id="btn-submit"> <img src="images/ic_done.svg" alt="btn-submit" width="100%"> </button>
+                            <button type="button" onclick="closeModal()" id="btn-close"> <img src="images/ic_close.svg" alt="btn-close" width="100%"> </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <article class="tabs" id="tab-not-yet">
+                <h2>Belum dibaca</h2>
+                <section class="book-list" id="book-not-yet-list">
+
+                </section>
+            </article>
+            <article class="tabs" id="tab-done">
+                <h2>Selesai dibaca</h2>
+                <section class="book-list" id="book-done-list">
+                    
+                </section>
+            </article>
+        </div>
+        <button id="btn-add"><img src="images/ic_add.svg" alt="btn-add" width="75%"></button>
+    </main>
+    <footer></footer>
+</body>
+</html>
+
+<script src="script.js"></script>
