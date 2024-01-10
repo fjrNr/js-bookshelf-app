@@ -1,6 +1,6 @@
 # Bookshelf App 
 ## Description
-This is submitted project to passed the front-end web development class from Dicoding Indonesia. This project using front-end website language, such as HTML, CSS, and JavaScript to ensure this web page can be open via web browser.
+This is submitted project to passed the front-end web development class from Dicoding Indonesia. This project using front-end website language, such as HTML, CSS, and JavaScript to create a bookshelf web page.
 
 ## How to Install and Run the Project
 Download and extract this project, then open **index.html** in the extracted project folder via web browser
